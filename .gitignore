@@ -1,0 +1,10 @@
+escanteios/
+*.json
+venv/
+
+geckodriver.log
+b.py
+bot-xpath.py
+agua.py
+
+venv/
