@@ -11,7 +11,10 @@ obs:
 -"python 'localArquivo'" para rodar o script
 - **digite scrapy no terminal para ver os comandos e a descrição**
 -'scrapy shell '\URL(facultativo)' para rodar o script em modo interativo
+- extensão selectorGadget ajuda a encontrar itens por css_selector
+- scrapy runspider 'diretório/' -s HTTPCACHE_ENABLED=1 **salva requisições em cache** 
+
+crawl só funciona na pasta do projeto:
 -'scrapy crawl nomeProjeto' rodar o arquivo
 -'scrapy crawl nomeProjeto -o novoArquivo.extensão(csv, json)' add informação ao arquivo  
 -'scrapy crawl nomeProjeto -O novoArquivo.extensão(csv, json)' cria novo arquivo
-- extensão selectorGadget ajuda a encontrar itens por css_selector

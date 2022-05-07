@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
-import requests #pip install pandas
+import requests #pip install requests
 import pandas as pd #pip install pandas
-from bs4 import BeautifulSoup #pip install beautifilsoup4
+from bs4 import BeautifulSoup #pip install beautifulsoup4
 from selenium import webdriver #pip install selenium
 from selenium.webdriver.firefox.options import Options
 import json
