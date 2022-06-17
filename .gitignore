@@ -8,3 +8,7 @@ bot-xpath.py
 agua.py
 
 venv/
+
+scrapy_alura/anaconda/output/
+*.jpg
+*.png
