@@ -8,7 +8,7 @@ step 5: instalar o Selenium "pip install selenium"
 
 obs: 
 **- instalar o selenium e os drivers dos navegadores (dica: use o choco)**
--"python -m selenium" verifica se está rodando
+-"python -m selenium" verifica se o pacote está instalado
 -"python 'localArquivo'" para rodar o script
 -"python -i 'nameArquivo'" para rodar o script em modo interativo
 

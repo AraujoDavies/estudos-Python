@@ -1,7 +1,6 @@
 from operator import contains
 import scrapy
 
-
 class MlSpider(scrapy.Spider):
     name = 'ml'
     start_urls = ['https://www.mercadolivre.com.br/ofertas?container_id=MLB779362-1&page=1']
@@ -18,13 +17,5 @@ class MlSpider(scrapy.Spider):
             if '&page' in next_page:
                 yield scrapy.Request(url=next_page, callback=self.parse)
     
-    
     #classe ok = andes-pagination__button--next
     #classe fim = andes-pagination__button--next andes-pagination__button--disabled
-    
-            
-    
-
-
-
-            
