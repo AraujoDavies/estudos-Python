@@ -1,3 +1,5 @@
+PYTHON 3.10.4
+
 Crie o ambiente Virtual Venv para rodar esses projetos:
 
 step 1: navegar até a pasta do projeto
