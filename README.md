@@ -1,4 +1,4 @@
-PYTHON 3.10.4
+PYTHON 3.8.2
 
 Crie o ambiente Virtual Venv para rodar esses projetos:
 
