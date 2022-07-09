@@ -12,3 +12,6 @@ venv/
 scrapy_alura/anaconda/output/
 *.jpg
 *.png
+contas.ipynb
+roullet.ipynb
+teste.py
