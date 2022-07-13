@@ -12,6 +12,7 @@ venv/
 scrapy_alura/anaconda/output/
 *.jpg
 *.png
-contas.ipynb
+contas(meusdados).ipynb
 roullet.ipynb
 teste.py
+tesoubot_app.session

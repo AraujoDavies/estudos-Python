@@ -1,34 +1,23 @@
 # Importa as opções do Firefox
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from selenium import webdriver
+from selenium.webdriver import Firefox
 from time import sleep
 import pandas as pd
-from bs4 import BeautifulSoup
 from urllib import request
+from bs4 import BeautifulSoup
+from selenium.webdriver import FirefoxProfile
 
-def trata_html(input):
-    return " ".join(input.split()).replace('> <','><')
+options=Options()
+firefox_profile = FirefoxProfile()
+options.profile = firefox_profile
 
 # url da página inicial da academia das apostas
 academia = "https://www.academiadasapostasbrasil.com/"
 
-# abrindo o firefox em background
-option = Options()
-option.headless = True
-driver = webdriver.Firefox(options=option)
+# abrindo o Navegador e Request
+f = options.profile
 
-driver.get(academia)
-# sleep (10)
-# driver.quit()
+f = Firefox(options.profile) 
 
-#sleep(4)
-for i in range(0,2):
-    driver.find_element(By.XPATH, '//td[contains(@class, "footer")]')
-    driver.find_element(By.XPATH, '//td[contains(@class, "footer")]').click()
-    #sleep(4) # colocar uma espera aqui
-
-
-html_table = driver.find_element(By.XPATH, '//table[contains(@class, "dskt")]').get_attribute('outerHTML')
-html_table = trata_html(html_table)
-soup = BeautifulSoup(html_table, 'html.parser')
+f.get(academia)

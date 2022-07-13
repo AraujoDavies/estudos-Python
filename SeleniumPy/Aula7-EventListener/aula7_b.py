@@ -26,7 +26,7 @@ class Escuta(AbstractEventListener):
 
 browser = Firefox()
 
-rapi_browser = EventFiringWebDriver(browser, Escuta())
+rapi_browser = EventFiringWebDriver(browser, Escuta()) #faz a ligação entre a classe e o selenium
 
 rapi_browser.get('https://selenium.dunossauro.live/aula_07_d')
 
@@ -36,7 +36,6 @@ p = rapi_browser.find_element(By.TAG_NAME,'p')
 
 input_de_texto.click()
 span.click()
-
 rapi_browser.get('https://selenium.dunossauro.live/aula_07_c')
 
 rapi_browser.back()
